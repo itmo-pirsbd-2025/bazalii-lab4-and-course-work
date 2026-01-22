@@ -1,0 +1,12 @@
+ollama-client:
+  base-url: "http://localhost:11434"
+  request-timeout: 120s
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/summarization
+    username: summarizer
+    password: summarizer

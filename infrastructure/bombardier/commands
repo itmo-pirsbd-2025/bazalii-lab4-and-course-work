@@ -1,0 +1,3 @@
+bombardier --connections=10 -f PostgresMessages --method=POST --header="Content-Type:application/json" --duration=300s --timeout 60s --latencies localhost:8080/api/summary
+
+bombardier --connections=10 --method=GET --header="Content-Type:application/json" --duration=300s --timeout 1s --latencies localhost:8080/api/summary/0cda2077-c624-4843-bbc8-8b3b4f570bd0
